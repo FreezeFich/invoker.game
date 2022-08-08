@@ -1,0 +1,261 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+audio{
+    display: none;
+}
+
+#startgame{
+    position: absolute;
+    left: 38%;
+    width: 300px;
+    height: 100px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #616161;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #fff;
+    background: rgb(77, 72, 72);
+    transition: ease-in-out .2s;
+}
+
+#startgame:hover {
+    background: rgb(53, 51, 51);
+
+}
+
+#startgame:active {
+    background: rgb(133, 128, 128);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#stats {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-invoker p{
+    margin: 0;
+}
+.stats-roshan p{
+    margin: 0;
+}
+.invoker-model{
+    height: 300px;
+    width: 300px;
+}
+.roshan-model{
+    height: 300px;
+    width: 300px;
+}
+
+.effect-icon-disarm{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+.effect-icon-burning{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.skills {
+    position: absolute;
+    right: 46%;
+}
+
+#sunstrike {
+    display: none;
+    text-align: center;
+
+}
+
+#sunstrikeText {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#deafeningBlast {
+    display: none;
+}
+
+#alacrity {
+    display: none;
+    text-align: center;
+}
+
+#chaosMeteor {
+    display: none;
+}
+
+#invokerAttackButton {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: none;
+    padding: 20px 30px;
+    color: #fff;
+    background: rgb(77, 72, 72);
+    transition: ease-in-out .2s;
+}
+
+#roshanAttackButton {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: none;
+    padding: 20px 30px;
+    color: #fff;
+    background: rgb(77, 72, 72);
+    transition: ease-in-out .2s;
+}
+
+#invokerAttackButton:hover {
+    background: rgb(53, 51, 51);
+
+}
+
+#invokerAttackButton:active {
+    background: rgb(133, 128, 128);
+
+}
+
+
+
+#qwe-interface {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+}
+
+.item-icon{
+    width: 150px;
+    height: 100px;
+}
+.effect-icon-burning{
+    display: none;
+}
+
+
+#menu__toggle {
+    opacity: 0;
+}
+
+
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span{
+    color: #413030;
+}
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    /* width: 100%; */
+    height: 2px;
+    background-color: #9c8686;
+    
+    transition-duration: .25s;
+    border: 1px solid;
+}
+
+.menu__btn>span::before {
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+.stash p{
+    text-align: center;
+}
+.stash{
+    position: absolute;
+    left: 38%;
+    top: 70%;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-direction: row;
+}
+
+#aghanimStash{
+    width: 130px;
+    height: 80px;
+}
+#refresherOrbStash{
+    background-color: #fff;
+    border: none;
+    width: 130px;
+    height: 80px;
+}

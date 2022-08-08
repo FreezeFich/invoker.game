@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <audio src="/audio/Invoker - Sun Strike.wmv(MP3_128K).mp3" id="sunstrikeAudio"></audio>
+    <audio src="/audio/Invoker - Meteor.wmv(MP3_128K).mp3" id="meteorAudio"></audio>
+    <div class="wrapper">
+        <button onclick="renderFight()" id="startgame">Start Game</button>
+        <div class="container" id="container">
+            <div id="caster">
+            </div>
+            <div class="skills" id="skills">
+                <div id="sunstrike">
+                    <button ondblclick="cataclismSkill()" ; onclick="sunstrikeSkill()">
+                        <img src="/skills/Sunsrtike.jpg" alt="">
+                    </button>
+                    <h1 id="sunstrikeText">
+                    </h1>
+                </div>
+                <div id="deafeningBlast">
+                    <button onclick="deafeningBlastSkill()">
+                        <img src="/skills/Deafening_Blast_icon.png" alt="">
+                    </button>
+                </div>
+                <button id="alacrity" onclick="alacritySkill()">
+                    <img src="/skills/Alacrity.png" alt="">
+                </button>
+                <button id="chaosMeteor" onclick="meteorSkill()">
+                    <img src="/skills/Chaos_Meteor_icon.png" alt="">
+                </button>
+            </div>
+            <div id="roshan">
+            </div>
+        </div>
+        <div class="caster-interface">
+            <button onclick="invokerAttack()" id="invokerAttackButton">Attack</button>
+            <div id="qwe-interface">
+            </div>
+        </div>
+        <div class="stash">
+            <div id="stash-item-1">
+
+            </div>
+            <div id="stash-item-2">
+            </div>
+            <div id="stash-item-3">
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
